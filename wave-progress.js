@@ -114,3 +114,5 @@ class WaveProgress {
         return a + t * (b - a);
     }
 }
+
+console.log("waveProgress.js ha sido cargado correctamente.");
