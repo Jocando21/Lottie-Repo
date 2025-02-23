@@ -99,8 +99,7 @@ class WaveProgress {
         } else {
             counterText = "[" + "█".repeat(percentage / 10) + "░".repeat(10 - percentage / 10) + "]";
         }
-        let counterElement = document.getElementById("counter");
-        if (counterElement) counterElement.textContent = counterText;
+        document.getElementById("counter").textContent = counterText;
     }
 
     changeProgress(amount) {
@@ -115,5 +114,3 @@ class WaveProgress {
         return a + t * (b - a);
     }
 }
-
-export default WaveProgress;
